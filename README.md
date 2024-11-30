@@ -37,26 +37,26 @@ Fact-to-Dimension Connections through primary and foreign keys to support comple
 ## 🛠️ ETL Process
 Tool Used: Pentaho Data Integration (PDI)
 
-Stages:
-Extract: Load data from CSV files.
-Transform: Handle data type conversions, key mappings, and error handling.
-Load: Populate staging and core layers in the MySQL database.
-⚙️ Challenges Faced:
+## Stages:
+### Extract: Load data from CSV files.
+### Transform: Handle data type conversions, key mappings, and error handling.
+### Load: Populate staging and core layers in the MySQL database.
+## ⚙️ Challenges Faced:
 Data Type Mismatches: Resolved through data type transformations.
 Relationship Constraints: Handled by pre-validating foreign keys before loading.
 💾 Technology Stack
-Database: MySQL
-ETL Tool: Pentaho
-Environment: On-premise
-🚀 Performance Optimization
-Indexes: Created on fact tables (SalesKey, CustomerKey, etc.) to improve query performance.
+### Database: MySQL
+### ETL Tool: Pentaho
+### Environment: On-premise
+## 🚀 Performance Optimization
+### Indexes: Created on fact tables (SalesKey, CustomerKey, etc.) to improve query performance.
 Optimized Joins: Between fact and dimension tables to reduce query execution time.
 📊 Dashboards & Reporting
-Key Metrics Tracked:
-💰 Total Revenue
-📈 Profit
-👥 Customer Count
-🛍️ Order Quantity
+## Key Metrics Tracked:
+### 💰 Total Revenue
+### 📈 Profit
+### 👥 Customer Count
+### 🛍️ Order Quantity
 Report Types:
 Pie Charts: Customer segmentation by region.
 Bar Charts: Sales by product category.
@@ -84,9 +84,9 @@ CREATE TABLE factSales (
   FOREIGN KEY (DateKey) REFERENCES dimDate(DateKey)
 );
 ## 🛡️ Maintenance and Support
-Backups:
+## Backups:
 Regular backups for staging and core layers.
-Monitoring:
+## Monitoring:
 Data Quality Checks: Regular validation of data integrity, including completeness, consistency, and uniqueness.
 ETL Monitoring: Track ETL job success/failure and log performance metrics, such as load times.
 ## 🎨 Project Highlights
