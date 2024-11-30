@@ -19,9 +19,9 @@ Data Structure: Structured
 🛠️ Architecture
 The data warehouse follows a Star Schema design with the following layers:
 
-Staging Layer: Raw data loaded from CSV files.
-Core Layer: Cleaned and transformed data in star schema format.
-Presentation Layer: Data prepared for reporting and dashboards.
+### Staging Layer: Raw data loaded from CSV files.
+### Core Layer: Cleaned and transformed data in star schema format.
+### Presentation Layer: Data prepared for reporting and dashboards.
 🗂️ Schema Design
 🔑 Fact Tables
 factSales: Tracks sales transactions.
